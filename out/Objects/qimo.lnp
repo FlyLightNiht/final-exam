@@ -1,0 +1,12 @@
+--cpu Cortex-M0
+".\objects\keypress.o"
+".\objects\main.o"
+".\objects\adc.o"
+".\objects\led.o"
+".\objects\uart.o"
+".\objects\startup_lpc11xx.o"
+".\objects\system_lpc11xx.o"
+--strict --scatter ".\Objects\qimo.sct"
+--summary_stderr --info summarysizes --map --xref --callgraph --symbols
+--info sizes --info totals --info unused --info veneers
+--list ".\Listings\qimo.map" -o .\Objects\qimo.axf
